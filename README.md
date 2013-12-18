@@ -22,9 +22,6 @@ EXCEPT - Replace a1112223344 with your student ID and password with the password
 
 Running this app will create tables in Oracle instead of MySql.
 
-
-
-
 Alternatively, you can override the existing datasource stanza by adding the file
 
 ~/.grails/oratest-config.groovy
@@ -36,3 +33,16 @@ the form
     dataSource.password="yourOraclePassword"
 
 
+N.B. A good approach might be to use MySQL in the development environment, but configure oracle for the production environment. By default
+
+    grails run-app
+
+Will use the development environment settings
+
+    grails production run-app
+
+Will run the app in the production environment
+
+    grails war
+
+Will package up the application for deployment using the production settings
