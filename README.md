@@ -24,3 +24,15 @@ Running this app will create tables in Oracle instead of MySql.
 
 
 
+
+Alternatively, you can override the existing datasource stanza by adding the file
+
+~/.grails/oratest-config.groovy
+
+This file lets you specify local only overrides to the app config, and is ideal, since it means you don't need to check in database username/password into git. The file should be of
+the form
+
+    dataSource.username="yourSHUStudentId"
+    dataSource.password="yourOraclePassword"
+
+

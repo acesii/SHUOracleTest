@@ -17,8 +17,8 @@ environments {
         dataSource {
             dialect = org.hibernate.dialect.Oracle10gDialect
             driverClassName = 'oracle.jdbc.driver.OracleDriver'
-            username = 'acesii'
-            password = '**'
+            // username = 'change'  // Override in ~/.grails/SHUOracleTest-config.groovy
+            // password = 'change'  // By setting properties called datasource.username and datasource.password
             url = 'jdbc:oracle:thin:@homepages.shu.ac.uk:1521:SHU11G'
             dbCreate = 'update'
         }
